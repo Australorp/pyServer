@@ -13,15 +13,15 @@ def base():
 def home(path):
     return send_from_directory('../PollApp/public', path)
 
-dataFile = open('data.json')
-data = dataFile.read()
-dataFile.close()
+#dataFile = open('data.json')
+#data = dataFile.read()
+#dataFile.close()
 
-@app.route("/data")
-def hello():
+#@app.route("/data")
+#def data():
     #response = jsonify(data)
     #response.headers.add("Access-Control-Allow-Origin", "*")
-    return str(data)
+    #return str(data)
 
 @app.route('/login',methods = ['POST', 'GET'])
 def login():
